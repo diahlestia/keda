@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <script src="script.js" type="text/javascript"></script>
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+      #mylist {
+  
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body onload="load()">
+    <h2>Parking List</h2>
+    <div class="dropdown">
+        <select id="mylist" onchange="filterVehicle()" class='form-control'>
+            <option>motor</option>
+            <option>mobil</option>
+        </select>
+      </div>
+    </div>
+    <br />
+    <table id="myTable">
+      <tr>
+        <th>Tipe Kendaraan</th>
+        <th>Parkir Masuk</th>
+        <th>Parkir Keluar</th>
+        <th>Total</th>
+      </tr>
+    </table>
+  </body>
+</html>
